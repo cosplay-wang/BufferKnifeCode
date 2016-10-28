@@ -21,6 +21,7 @@ import butterknife.OnClick;
 import butterknife.OnItemClick;
 
 public class MainActivity extends AppCompatActivity {
+
     @Bind(R.id.knife_tv) TextView tvTitle;
     @Bind(R.id.knife_lin_tv) TextView tvTitleLin;
     @Bind(R.id.knife_listview)ListView listview;
@@ -53,5 +54,10 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<20;i++){
             dataList.add("数据条数："+(i+1));
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
