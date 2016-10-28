@@ -25,5 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.1.1'
     // ButterKnife
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.android.support:support-annotations:24.1.1'
+    //8.0.1的版本有了解绑定
+       compile 'com.android.support:support-annotations:24.1.1'
 }
